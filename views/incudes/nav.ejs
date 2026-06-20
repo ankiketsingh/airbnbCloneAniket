@@ -1,0 +1,54 @@
+
+
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listings"><i class="fa-brands fa-safari"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav">    
+          <a class="nav-link" href="/listings">Explore</a>
+        </div>
+
+        <div class="navbar-nav ms-auto ">
+           <form class="d-flex" role="search">
+        <input class="form-control me-2 search-inp" type="search" placeholder="Search Destination" aria-label="Search"/>
+        <button class="btn btn-danger btn-search " type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>Search
+        </button>
+      </form> 
+        </div>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="/listings/new">Airbnb your home</a>
+        <% if(!currentUser) { %>
+         
+          <a class="nav-link" href="/users/signup"><b>Sign up</b></a>
+         <a class="nav-link" href="/users/login"><b>Login</b></a>
+        <% } %>
+        <% if(currentUser) { %>
+         
+          <a class="nav-link" href="/users/logout"><b>Logout</b></a>
+      
+          <a class="nav-link" href="#"><%= currentUser.username %>'s Page</a>
+        
+          <% } %>
+          </div>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+      </ul>
+      <!-- -->
+          
+    </div>
+  </div>
+</nav>

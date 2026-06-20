@@ -1,0 +1,132 @@
+body{
+    font-family: "Poppins", sans-serif !important;
+  font-weight: 500 !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+   flex: 1;
+}
+.add-btn{
+   background-color:#fe424d ;
+   border: none !important;
+}
+ .navbar{
+    height: 5rem;
+    background-color: white;
+ }
+ .search-inp{
+   border-radius: 25px;
+   padding: 0.5rem 1rem 0.5rem 2rem;
+   font-size: 0.9rem;
+ }
+.btn-search{
+    border-radius: 25px;
+}
+
+ .btn-search i{
+   display: inline;
+   margin: 0.2rem;
+   
+ }
+
+ .fa-safari{
+    color:#fe424d;
+    font-size: 2.1rem;
+ }
+
+ .nav-link{
+    color:#222222  !important;
+ }
+ .foot-link a{
+    color: #222222;
+    text-decoration: none;
+    margin: 0.2rem;
+ }
+  .foot-link a:hover{
+    color: #222222;
+    text-decoration: underline;
+ }
+
+ .foot-social i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+ }
+.foot-link,.foot-social,.brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    text-align: center;
+    height: 8rem;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  align-items:space-evenly;
+
+}
+
+/* card */
+.listingCard{
+   border: none !important;
+   margin-bottom: 2rem;
+}
+
+
+.card-body{
+   padding: 0 !important;
+}
+
+.card-text{
+   font-weight: 400 !important;
+}
+.card-img-top{
+   border-radius: 1rem !important;
+   width: 100% !important;
+   object-fit: cover !important;
+}
+
+.listing-links{
+   text-decoration: none !important;
+   
+}
+
+.card-img-overlay{
+   opacity: 0;
+   transition: 0.3s  !important;
+}
+.card-img-overlay:hover{
+   opacity: 1;
+   /* background-color: antiquewhite; */
+   box-shadow: #222222 0px 0px 10px 0px  !important;
+     border-radius: 16px 16px 10px 10px !important; 
+}
+
+/* show */
+.show-img{
+   /* height: 40vh; */
+   height: 28rem;
+}
+/* one line for edit */
+.show-image-edit{
+    height: 200px;
+}
+.btn{
+   display: flex;
+}
+.show-card{
+   padding-left: 0;
+   padding-right: 0;
+}
+
+/* map */
+#map{
+   height: 400px;
+   width:80vh;
+   margin: 10px;
+}
