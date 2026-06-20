@@ -116,7 +116,11 @@ app.use((req,res,next)=>{
 
 
 //show list of store data in db
-//
+//home route
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+//user route
 app.use("/users",userRouter);
 //listing route
 app.use("/listings", listingsRouter);
